@@ -1,0 +1,275 @@
+:root {
+    --primario-color: #262c47;
+    --secundario-color: #f5f5f5;
+    --botones-color: #262c47;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+/* == Contenido == */
+
+body {
+    background-color: var(--secundario-color);
+    margin: 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--secundario-color);
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* == Botones == */
+
+button {
+    margin: 0.5em;
+    background-color: var(--botones-color);
+    color: var(--secundario-color);
+}
+
+button:hover {
+    background-color: green;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#botones {
+    text-align: center;
+    position: fixed;
+    left: 55vw;
+    bottom: 200px;
+    width: 20%;
+}
+
+#botones button {
+    border-radius: 100%;
+    height: 50px;
+    border: 2px solid var(--primario-color);
+    color: var(--secundario-color);
+}
+
+#botones span {
+    padding: 10px 10px 10px;
+    display: inline-block;
+}
+
+#divGanar {
+    display: none;
+    margin: 0 auto;
+    width: 500px;
+    padding: 5px;
+    z-index: 1;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    background-color: var(--primario-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#btn-Salir {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+#sectionIntentos {
+    padding: 1em;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#sectionIntentos p {
+    text-align: center;
+}
+
+#comprobar {
+    border-radius: 100%;
+    height: 50px;
+    bottom: 0px;
+    left: 5px;
+    border: 2px solid var(--primario-color);
+    color: var(--primario-color);
+}
+
+#comprobar span {
+    padding: 10px 10px 10px;
+    display: inline-block;
+}
+
+#limpiar {
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+/* == Bolas == */
+
+#listaBolas {
+    padding: 1em;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.bolas {
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto;
+    border: 1px solid var(--primario-color);
+}
+
+#white {
+    background-color: white;
+    margin-top: 10px;
+}
+
+#black {
+    background-color: black;
+    margin-top: 10px;
+}
+
+#red {
+    background-color: red;
+    margin-top: 10px;
+}
+
+#brown {
+    background-color: brown;
+    margin-top: 10px;
+}
+
+#yellow {
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+#green {
+    background-color: green;
+    margin-top: 10px;
+}
+
+#orange {
+    background-color: orange;
+    margin-top: 10px;
+}
+
+#blue {
+    background-color: blue;
+    margin-top: 10px;
+}
+
+
+/* == Tablero == */
+
+#tablero {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 2px;
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.casilla {
+    display: inline-block;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    margin: 25px;
+    border: 1px solid var(--primario-color);
+    background-color: gray;
+}
+
+.casillaPista {
+    border-radius: 50px;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 25px;
+    border: 1px solid var(--primario-color);
+    background-color: gray;
+}
+
+
+
+
+/* == Footer == */
+
+footer {
+    position: static;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-align: center;
+}
+
+footer div {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.redes li {
+    margin: 0 1.3em;
+    transition-duration: 0.5s;
+}
+
+.redes li:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+
+.redes li img {
+    width: 50px;
+    height: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}

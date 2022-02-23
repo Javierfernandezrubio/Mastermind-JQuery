@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Javier Fernández Rubio">
+    <title>MasterMind con JQuery</title>
+
+    <!-- Fuentes e Iconos -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Libreria JQuery -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <!-- JavaScript -->
+    <script src="js/mastermind.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <noscript>
+        <p>Bienvenido a Mi Sitio</p>
+        <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.Si lo has deshabilitado
+            intencionadamente, por favor vuelve a activarlo.</p>
+    </noscript>
+
+    <header>
+        <h1>Mastermind con JQuery</h1>
+    </header>
+
+    <!-- Contenido -->
+
+    <div id="divGanar">
+        <h1>¡Hasta la victoria, siempre!</h1>
+        <button id="btn-Salir">Finalizar Juego</button>
+    </div>
+    <main>
+        <section id="tablero">
+        </section>
+        <div>
+            <section id="sectionIntentos">
+                <p id="intentos">Intentos: 0</p>
+            </section>
+
+            <section id="listaBolas">
+                <div class="bolas" id="red"></div>
+                <div class="bolas" id="brown"></div>
+                <div class="bolas" id="yellow"></div>
+                <div class="bolas" id="green"></div>
+                <div class="bolas" id="orange"></div>
+                <div class="bolas" id="blue"></div>
+                <div class="bolas" id="white"></div>
+                <div class="bolas" id="black"></div>
+            </section>
+        </div>
+
+    </main>
+
+    <div id="botones">
+        <p>
+            <button id="btn-Comprobar"><span><i class="material-icons">done</i></span></button>
+            <button id="btn-Reiniciar"><span><i class="material-icons">cached</i></span></button>
+        </p>
+    </div>
+
+    <!-- Footers -->
+    <footer>
+        <ul class="redes">
+            <li><a href="https://twitter.com/" target="_blank"><img src="img/twitter.svg" alt="Twitter" srcset=""></a>
+            </li>
+            <li><a href="#"><img src="img/instagram2.svg" alt="Instagram" srcset=""></a></li>
+            <li><a href="https://github.com/Javierfernandezrubio" target="_blank"><img src="img/github.svg" alt="Github"
+                        srcset=""></a></li>
+        </ul>
+        <p>Copyright &copy; Javier Fernández Rubio 2022</p>
+    </footer>
+</body>
+
+</html>
